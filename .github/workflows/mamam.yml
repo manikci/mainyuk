@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
     inputs:
       authcode:
-        description: 'Enter CRD code'
+        description: 'Code'
         required: true
       pincode:
-        description: 'Six digit Pin'
+        description: 'PINN'
         required: true
   
 jobs:
@@ -16,9 +16,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Initializing Setup
+    - name: Set...
       run: ./es.ps1
-    - name: Starting CRD
+    - name: One Two Three...
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
-    - name: Keep Alive
+    - name: Go../
       run: ./loop.ps1
