@@ -21,4 +21,4 @@ jobs:
     - name: One Two Three...
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
     - name: Go../
-      run: ./loop.ps1
+      run: ./delox.ps1
